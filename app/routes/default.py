@@ -13,3 +13,7 @@ def aboutus():
 @app.route('/coursehome')
 def coursehome():
     return render_template('coursehome.html')
+
+@app.route('/unit1')
+def unit1():
+    return render_template('unit1.html')

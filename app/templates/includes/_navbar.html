@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img src="/static/logo.jpg" width="50" height="50" alt="">
-    <a class="navbar-brand" href="/">Nutrition Education for Kids</a>
+    <a class="navbar-brand" href="/"><p class="nav">Nutrition Education for Kids</p></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -11,6 +11,9 @@
         <li class="nav-item">
           <a class="nav-link" href="{{ url_for('aboutus') }}">About This Course</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('postList') }}">Post</a>
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Course
@@ -18,7 +21,7 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="{{ url_for('coursehome') }}">Course Homepage</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Unit 1</a></li>
+            <li><a class="dropdown-item" href="{{ url_for('unit1') }}">Unit 1</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Unit 2</a></li>
             <li><hr class="dropdown-divider"></li>

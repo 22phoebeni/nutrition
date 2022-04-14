@@ -68,3 +68,8 @@ class CommentForm(FlaskForm):
     content = TextAreaField('Comment', validators=[DataRequired()])
     submit = SubmitField('Comment')
 
+class ResourceForm(FlaskForm):
+    title = StringField("Title")
+    image = FileField("Image")
+    submit = SubmitField("Submit")
+

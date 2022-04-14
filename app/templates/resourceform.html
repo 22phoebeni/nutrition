@@ -1,0 +1,70 @@
+<!-- this is a generic form page.  Best way to make a new form page is to 
+copy this one and then edit it. -->
+
+{% extends "base.html" %}
+
+{% block body %}
+        <p class="site-title-words">Gardening Activity: Basil</p>
+
+        <!--List all errors in a group at the top-->
+    <div class="container-fluid">
+        <div class="row justify-content-evenly">
+            <div class="col" class="about-note">
+                {% for field in form.errors %}
+                    {% for error in form.errors[field] %}
+                        <div class="alert alert-error">
+                            <strong>Error!</strong>{{field}}: {{error}}
+                        </div>
+                    {% endfor %}
+                {% endfor %}
+                <div class="font">
+                    <p class="about-note">Welcome to your final lesson of Unit 1! This fun and easy activity is optional, but you are encouraged to try it out, preferably with the help of an adult in your household.</p>
+                    <p class="font-big">Materials:</p>
+                    <p class="about-note">(Some of the following can be found around the house, but an adult in your household will most likely have to buy the rest of the necessary materials)</p>
+                    <ol>
+                        <li>Basil seeds</li>
+                        <li>Small pot (approx. 6'' diameter)</li>
+                        <li>Soil (ex. Miracle Gro Garden Soil Vegetables and Herbs)</li>
+                        <li>Watering can (optional)</li>
+                    </ol>
+                    <p class="font-big">Directions:</p>
+                    <ol>
+                        <li>Fill your pot to the surface with soil.</li>
+                        <li>Then, using your finger, poke six 1 1/2 inch holes in the soil. Don't forget to wash your hands after!</li>
+                        <li>Scatter 6-8 of your basil seeds across these holes and then fill the holes in with more soil.</li>
+                        <li>Put the pot in a sunny place such as a windowsill or a spot in your backyard.</li>
+                        <li>For the first week, water the seedlings once every two days. After that, water them deeply (about 1 inch of water will suffice) once a week.</li>
+                        <li>If the plant has leaves that become more yellow or pale, reduce the amount of water you give the plant each week.</li>
+                        <li>Once the plant grows many leaves and they start to get crowded, harvest the leaves and use them as ingredients in pesto, margherita pizza, and other dishes.</li>
+                        <li>If you would like to, you can submit pictures of your plant and/or the dishes you make with it below. Good luck!</li>
+                    </ol>
+                </div>
+                <form method="post" enctype="multipart/form-data" class="aboutme-info">
+                    {{ form.hidden_tag() }}
+                    
+                    {{ form.title.label }} <br>
+                    {{ form.title(size=50) }} <br><br>
+                    <!--List the errors for this field-->
+                    {% for error in form.title.errors %}
+                    <br>
+                        <span style="color: red;">[{{ error }}]</span>
+                    {% endfor %}
+
+                    {{ form.image.label }} <br>
+                    {{ form.image(size=64) }}
+                    <!--List the errors for this field-->
+                    {% for error in form.image.errors %}
+                        <span style="color: red;">[{{ error }}]</span>
+                    {% endfor %}
+                    <br><br>
+                    {{form.submit()}}
+                </form>
+            </div>
+            <div class="col">
+                <div class="text-center">
+                    <img src="/static/basil.jpg" class="img-about1" alt="Image Not Found." width="800" height="1200">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

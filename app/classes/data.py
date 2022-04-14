@@ -64,6 +64,13 @@ class Comment(Document):
     createdate = DateTimeField(default=dt.datetime.utcnow)
     modifydate = DateTimeField()
 
+
     meta = {
         'ordering': ['-createdate']
     }
+
+class Resource(Document):
+    owner = ReferenceField('User',reverse_delete_rule=CASCADE)
+    title = StringField()
+    image = FileField()
+    createdate = DateTimeField(default=dt.datetime.utcnow)

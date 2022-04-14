@@ -6,10 +6,6 @@
     
 }
 
-#title-pic{
-    align-items: center;
-}
-
 .about-title-words{
     text-align: center;
     font-family: 'BhuTuka Expanded One', cursive;
@@ -17,7 +13,7 @@
 }
 
 .about-title{
-    background-color: rgb(252, 168, 162);
+    background-color: rgb(247, 186, 117);
 }
 
 .about-purpose{
@@ -59,4 +55,29 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 150%;
     text-align: left;
+}
+
+.site-title-words{
+    text-align: center;
+    font-family: 'BhuTuka Expanded One', cursive;
+    font-size: 500%;
+}
+
+.site-title{
+    background-color: rgb(252, 168, 162);
+}
+
+.font{
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+
+.font-big{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 150%;
+}
+
+.nav{
+    font-family: 'Montserrat', sans-serif;
 }
