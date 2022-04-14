@@ -46,3 +46,12 @@ def resourceNew():
     # stored in the form object and are displayed on the form. take a look at postform.html to 
     # see how that works.
     return render_template('resourceform.html',form=form)
+
+@app.route('/resource/<resourceID>')
+# This route will only run if the user is logged in.
+@login_required
+def resource(resourceID):
+    # retrieve the post using the postID
+    thisResource = Resource.objects.get(id=resourceID)
+
+    return render_template('resource.html',resource=thisResource)

@@ -69,6 +69,7 @@ def postDelete(postID):
     # Send the user to the list of remaining posts.
     return render_template('posts.html',posts=posts)
 
+
 # This route actually does two things depending on the state of the if statement 
 # 'if form.validate_on_submit()'. When the route is first called, the form has not 
 # been submitted yet so the if statement is False and the route renders the form.

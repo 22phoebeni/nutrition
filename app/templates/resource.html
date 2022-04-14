@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<p>Congratulations on completing Unit 1!</p>
+<p>To continue learning, click on "Unit 2" in the "Course" drowpdown menu.<p>
+<p>The image you submitted is shown below.</p>
+
+{% if resource.author == current_user %}
+    {{post.subject}}
+    {{resource.content}}
+
+    {% endif %}
+{% endblock %}
