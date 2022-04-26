@@ -17,3 +17,11 @@ def coursehome():
 @app.route('/unit1')
 def unit1():
     return render_template('unit1.html')
+
+@app.route('/unit2')
+def unit2():
+    return render_template('unit2.html')
+
+@app.route('/unit3')
+def unit3():
+    return render_template('unit3.html')

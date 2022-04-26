@@ -22,6 +22,10 @@
     font-size: large;
 }
 
+.coursehome-title{
+    background-color: rgb(247, 245, 117);
+}
+
 .about-units-title{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -80,4 +84,23 @@
 
 .nav{
     font-family: 'Montserrat', sans-serif;
+}
+
+.congrats{
+    text-align: center;
+    font-family: 'BhuTuka Expanded One', cursive;
+    font-size: 150%;
+    background-color: rgb(161, 255, 124);
+}
+
+.unit1-title{
+    background-color: rgb(161, 255, 124);
+}
+
+.unit2-title{
+    background-color: rgb(124, 218, 255);
+}
+
+.unit3-title{
+    background-color: rgb(184, 165, 253);
 }

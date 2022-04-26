@@ -1,14 +1,21 @@
 {% extends 'base.html' %}
 
 {% block body %}
-
-<p>Congratulations on completing Unit 1!</p>
-<p>To continue learning, click on "Unit 2" in the "Course" drowpdown menu.<p>
-<p>The image you submitted is shown below.</p>
+<div class="container-fluid">
+    <div class="congrats">
+        <br>
+        <p class="congrats-words">Congratulations on completing Unit 1!</p>
+        <br>
+    </div>
+    <br>
+<p class="font-big">To continue learning, click on "Unit 2" in the "Course" drowpdown menu.<p>
+<p class="font-big">The image you submitted is shown below.</p>
 
 {% if resource.author == current_user %}
     {{post.subject}}
     {{resource.content}}
 
     {% endif %}
+
+</div>
 {% endblock %}
