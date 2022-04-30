@@ -11,22 +11,35 @@
 <br>
 
 <div>
+  <div class="font-big">
     <div class="row justify-content-evenly">
-        <div class="col">
-          <div class="text-center">
-            <a class="btn btn-primary" href="{{ url_for('U3L1') }}" role="button">Lesson 1: Read</a>
-          </div>
-          </div>
-        <div class="col">
-          <div class="text-center">
-            <a class="btn btn-primary" href="{{ url_for('U3L2') }}" role="button">Lesson 2: Watch</a>
-            </div>
+      <div class="col">
+        <div class="text-center">
+          <img src="/static/book.png" alt="Image Not Found." height="400">
+            <br>
+            <br>
+          <a class="btn btn-dark btn-lg" href="{{ url_for('U3L1') }}" role="button">Lesson 1: Read</a>
         </div>
-        <div class="col">
-          <div class="text-center">
-            <a class="btn btn-primary" href="#" role="button">Lesson 3: Do!</a>
-            </div>
+        </div>
+      <div class="col">
+        <div class="text-center">
+          <img src="/static/tv.png" alt="Image Not Found." height="400">
+            <br>
+            <br>
+          <a class="btn btn-dark btn-lg" href="{{ url_for('U3L2') }}" role="button">Lesson 2: Watch</a>
+          </div>
+      </div>
+      <div class="col">
+        <div class="text-center">
+          <img src="/static/tools.png" alt="Image Not Found." height="400">
+            <br>
+            <br>
+          <a class="btn btn-dark btn-lg" href="{{ url_for('U3L2') }}" role="button">Lesson 3: Do!</a>
           </div>
         </div>
-    </div>
+      </div>
+      <br>
+      <br>
+    </div> 
+  </div>
 {% endblock %}

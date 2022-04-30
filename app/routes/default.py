@@ -34,6 +34,10 @@ def U1L1():
 def U1L2():
     return render_template('U1L2.html')
 
+@app.route('/U1L3')
+def U1L3():
+    return render_template('U1L3.html')
+
 @app.route('/U2L1')
 def U2L1():
     return render_template('U2L1.html')

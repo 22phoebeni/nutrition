@@ -54,4 +54,4 @@ def resource(resourceID):
     # retrieve the post using the postID
     thisResource = Resource.objects.get(id=resourceID)
 
-    return render_template('resource.html',resource=thisResource)
+    return render_template('unit3.html',resource=thisResource)
