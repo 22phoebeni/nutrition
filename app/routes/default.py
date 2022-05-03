@@ -53,3 +53,7 @@ def U3L1():
 @app.route('/U3L2')
 def U3L2():
     return render_template('U3L2.html')
+
+@app.route('/U3L3')
+def U3L3():
+    return render_template('U3L3.html')

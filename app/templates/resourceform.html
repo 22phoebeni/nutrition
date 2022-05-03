@@ -23,7 +23,7 @@ copy this one and then edit it. -->
                     {% endfor %}
                 {% endfor %}
                 <div class="font">
-                    <p class="about-note">Welcome to your final lesson of Unit 1! This fun and easy activity is optional, but you are encouraged to try it out, preferably with the help of an adult in your household.</p>
+                    <p class="about-note">Welcome to your final lesson of Unit 2! This fun and easy activity is optional, but you are encouraged to try it out, preferably with the help of an adult in your household.</p>
                     <p class="font-big">Materials:</p>
                     <p class="about-note">(Some of the following can be found around the house, but an adult in your household will most likely have to buy the rest of the necessary materials)</p>
                     <ol>
@@ -64,7 +64,11 @@ copy this one and then edit it. -->
                     <br><br>
                     {{form.submit()}}
                 </form>
-            </div>
+                <br>
+                <div class="font-big">
+                    <a button type="button"  class="btn btn-dark btn-lg" href="{{ url_for('unit3') }}">Click here to start Unit 3!</a>
+                </div>
+                </div>
             <div class="col">
                 <div class="text-center">
                     <img src="/static/basil.jpg" class="img-about1" alt="Image Not Found." width="800" height="1200">

@@ -3,30 +3,54 @@
 {% extends 'base.html' %}
 
 {% block body %}
-<div class="unit2-title">
+  <div class="unit2-title">
+      <br>
+      <p class="about-title-words">Lesson 1: Read</p>
+      <br>
+  </div>
+  <br>
+  <div class="container">
     <br>
-    <p class="about-title-words">Lesson 1: Read</p>
-    <br>
-</div>
-<br>
-
-<div>
-    <div class="row justify-content-evenly">
-        <div class="col">
-          <div class="text-center">
-            <a class="btn btn-primary" href="#" role="button">Lesson 1: Read</a>
-          </div>
-          </div>
-        <div class="col">
-          <div class="text-center">
-            <a class="btn btn-primary" href="#" role="button">Lesson 2: Watch</a>
-            </div>
-        </div>
-        <div class="col">
-          <div class="text-center">
-            <a class="btn btn-primary" href="#" role="button">Lesson 3: Do!</a>
-            </div>
-          </div>
-        </div>
+    <p class="font-big">Read and look over the resources below to better understand the process by which food goes from farm to table. Then, once you are done, click the Lesson 2 button at the bottom of this page.</p>
+  </div>
+  <br>
+  <div class="container-fluid">
+    <div class="text-center">
+      <iframe src="/static/farming.pdf" height="1500" width="1000"></iframe>
+      <br>
+      <br>
+      <br>
+      <iframe src="/static/foodprocessing.pdf" height="1500" width="1000"></iframe>
+      <br>
+      <br>
+      <br>
+      <img src="/static/foodcycle.png" alt="Image Not Found." width="1000">
+      
+      </div>
+      </div>
+  </div>
+  <br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        
+      </div>
+      <div class="col">
+        
+      </div>
+      <div class="col">
+        
+      </div>
+      <div class="col">
+        
+      </div>
+      <div class="col">
+        
+      </div>
+      <div class="col">
+        <a class="btn btn-success btn-lg" href="{{ url_for('U2L2') }}" role="button">Lesson 2: Watch</a>
+      </div>
     </div>
+    <br>
+  </div>
 {% endblock %}

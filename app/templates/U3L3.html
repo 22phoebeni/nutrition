@@ -1,0 +1,52 @@
+<!-- this is a generic form page.  Best way to make a new form page is to 
+copy this one and then edit it. -->
+
+{% extends "base.html" %}
+
+{% block body %}
+
+<div class="unit3-title">
+    <br>
+    <p class="about-title-words">Research Activity: Food Assistance Programs</p>
+    <br>
+</div>
+<br>
+<div class="container-fluid">
+    <div class="row justify-content-evenly">
+        <div class="col">
+            <div class="font">
+                <p class="about-note">Welcome to your final lesson of Unit 3! This activity is optional, but you are encouraged to complete it with an adult in your household.</p>
+                <p class="font-big">Directions:</p>
+                <ol>
+                    <li>Visit the links provided below.</li>
+                    <br>
+                    <li>Take out a piece of paper and a writing utensil. As you look through the website's various pages, record the purpose of the program/organization, what it does, who it serves, and the problem(s) it is addressing.</li>
+                    <br>
+                    <li>Once you have written notes for all of the provided websites, share your findings with a parent.</li>
+                    </ol>
+                    <ul>
+                        <li><a href="https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program">Supplemental Nutrition Assistance Program (SNAP)</a></li>
+                        <li><a href="https://www.accfb.org/">Alameda County Community Food Bank</a></li>
+                        <li><a href="https://www.feedingamerica.org/?s_src=Y22XP3B1Y&s_keyword=feeding%20america&s_subsrc=c&_ga=2.194894189.1596242733.1651564698-355004266.1651564698&_gac=1.209464742.1651564698.EAIaIQobChMIpvGV9u3C9wIVjMLCBB1IxQoSEAAYASAAEgLxW_D_BwE">Feeding America</a></li>
+
+                    </ul>
+                   <br>
+                </div>
+                <p class="about-note-red">MESSAGE TO PARENTS:</p>
+                <p class="about-note">Organization such as Feeding America relieve hunger with the help of volunteers and donations. If you are able to help fight food insecurity, please do consider donating to or helping out at one of the food assistance organizations above or another of your choice.</p>
+        </div>
+        <div class="col">
+            <div class="text-center">
+                <img src="/static/snap.jpg" class="img-about1" alt="Image Not Found." width="800">
+            </div>
+        </div>
+        
+        <div class="font-big">
+            <br>
+            <a button type="button"  class="btn btn-dark btn-lg" href="{{ url_for('index') }}">Click here to return to the homepage!</a>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+{% endblock %}

@@ -9,24 +9,52 @@
     <br>
 </div>
 <br>
-
-<div>
-    <div class="row justify-content-evenly">
-        <div class="col">
-          <div class="text-center">
-            <a class="btn btn-primary" href="#" role="button">Lesson 1: Read</a>
-          </div>
-          </div>
-        <div class="col">
-          <div class="text-center">
-            <a class="btn btn-primary" href="#" role="button">Lesson 2: Watch</a>
-            </div>
-        </div>
-        <div class="col">
-          <div class="text-center">
-            <a class="btn btn-primary" href="#" role="button">Lesson 3: Do!</a>
-            </div>
-          </div>
-        </div>
+<div class="container">
+  <br>
+  <p class="font-big">Watch the videos below to dive deeper into how plants and other products become food. To do so, click on each of the images below, and they will take you to the site YouTube. Once, you are done watching a video, click the back arrow in the top left hand corner of the screen to return to this page. Once you have finished both videos, click on the Lesson 3 button at the bottom of this page.</p>
+</div>
+<br>
+<br>
+<div class="container-fluid">
+  <div class="text-center">
+    <div class="row">
+      <div class="col">
+        <p class="font-big">"The simple story of photosynthesis and food" from TED-Ed:</p>
+        <a href="https://www.youtube.com/watch?v=eo5XndJaz-Y">
+      <img src="/static/photosynthesis.jpg" alt="Image Not Found." width="600">
+        </a>
+      </div>
+      <div class="col">
+        <p class="font-big">"Here's How McDonald's French Fries Are Made. Food Production Processes" from #Mind Warehouse:</p>
+        <a href="https://www.youtube.com/watch?v=SKNCTXEYi48">
+          <img src="/static/mcdonalds.jpg" alt="Image Not Found." width="600">
+        </a>
+      </div>
     </div>
+  </div>
+<br>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      
+    </div>
+    <div class="col">
+      
+    </div>
+    <div class="col">
+      
+    </div>
+    <div class="col">
+      
+    </div>
+    <div class="col">
+      
+    </div>
+    <div class="col">
+      <a class="btn btn-success btn-lg" href="{{ url_for('resourceNew') }}" role="button">Lesson 3: Do!</a>
+    </div>
+  </div>
+  <br>
+</div>
 {% endblock %}
