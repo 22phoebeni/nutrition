@@ -54,6 +54,11 @@ copy this one and then edit it. -->
                     <br>
                         <span style="color: red;">[{{ error }}]</span>
                     {% endfor %}
+                    <p>
+                        {% if editResource and editResource.image %}
+                            <img class="img-thumbnail img-fluid" width="200" src="data:image;base64,{{base64encode(editResource.image.read())}}"> <br>
+                        {% endif %}
+                    </p>
 
                     {{ form.image.label }} <br>
                     {{ form.image(size=64) }}
@@ -65,15 +70,31 @@ copy this one and then edit it. -->
                     {{form.submit()}}
                 </form>
                 <br>
-                <div class="font-big">
-                    <a button type="button"  class="btn btn-dark btn-lg" href="{{ url_for('unit3') }}">Click here to start Unit 3!</a>
-                </div>
+                {% for resource in resources %}
+                <a href="/resource/delete/{{resource.id}}"><img width="50" src="/static/delete.png"></a> 
+                <a href="/resource/edit/{{resource.id}}"><img width="50" src="/static/edit.png"></a> 
+                {{resource.title}} 
+                <br>
+                {% if resource.image %}
+                    <img class="img-thumbnail img-fluid" width="200" src="data:image;base64,{{base64encode(resource.image.read())}}"> <br>
+                {% endif %}
+                 <br>
+                {% endfor %}
+                <br>
+            
                 </div>
             <div class="col">
                 <div class="text-center">
                     <img src="/static/basil.jpg" class="img-about1" alt="Image Not Found." width="800" height="1200">
                 </div>
+                <br>
+                <div class="font-big">
+                    <a button type="button"  class="btn btn-dark btn-lg" href="{{ url_for('unit3') }}">Click here to start Unit 3!</a>
+                    
+                </div>
+                <br>
             </div>
+            <br>
         </div>
     </div>
 {% endblock %}
